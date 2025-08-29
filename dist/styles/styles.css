@@ -1,0 +1,113 @@
+:root {
+    --platinum: #fafaf9;
+    --bright-gray: #e5eaf0;
+    --gray-violet: #f2eafd;
+    --dark-magenta: #7c19ee;
+    --midnight-express: #20293a;
+    --dark-grayish-blue: #394150;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font:
+        400 0.875rem "Sora",
+        sans-serif;
+    line-height: 1.6;
+    height: 100vh;
+    background-color: var(--platinum);
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.container {
+    padding: 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.dark-text {
+    color: var(--midnight-express);
+}
+
+.gray-text {
+    color: var(--dark-grayish-blue);
+}
+
+.magenta-text {
+    color: var(--dark-magenta);
+}
+
+/* CARD */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background-color: white;
+    box-shadow: 2px 4px 7px var(--bright-gray);
+    max-width: 375px;
+    border-radius: 10px;
+    padding: 1rem 1rem 1.25rem;
+    position: relative;
+}
+
+.card-img {
+    border-radius: 7px;
+    height: 152px;
+    width: 100%;
+    display: block;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 0.625rem;
+    margin: 1rem 0;
+    background-color: var(--gray-violet);
+    display: block;
+    width: fit-content;
+    padding: 0.375em 1em;
+    border-radius: 50px;
+}
+
+.title {
+    font-size: 1.125rem;
+    margin-bottom: 0.375rem;
+}
+
+.card-text {
+    margin-bottom: 1.25rem;
+}
+
+.line {
+    content: "";
+    height: 1px;
+    background-color: var(--bright-gray);
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+}
+
+.author {
+    font-size: 0.75rem;
+    padding-top: 1.25em;
+}
+
+/* FOOTER */
+.author-info {
+    font-size: 0.625rem;
+    text-align: center;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+    color: var(--dark-magenta);
+}
